@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_height="match_parent">
+
+            <!--/Headers/-->
+            <LinearLayout
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:src="@drawable/app_ic"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/ln_register_home"
+                    android:layout_width="match_parent"
+                    android:paddingRight="12sp"
+
+                    android:layout_height="match_parent">
+
+                    <com.mxi.ecommerce.widget.MyTextviewLight
+                        android:layout_width="match_parent"
+                        android:text="@string/home_name"
+                        android:textAlignment="textEnd"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/grey_text"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:src="@drawable/signup"
+                        android:layout_height="45dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--/Register Screeen/-->
+
+
+            <LinearLayout
+
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp">
+
+                        <com.mxi.ecommerce.widget.MyEdittextLight
+                            android:id="@+id/etRegFname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_first_name"
+                            android:inputType="textCapSentences"
+                            android:maxLines="1" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp">
+
+                        <com.mxi.ecommerce.widget.MyEdittextLight
+                            android:id="@+id/etRegLname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_last_name"
+                            android:maxLines="1" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp">
+
+                        <com.mxi.ecommerce.widget.MyEdittextLight
+                            android:id="@+id/etRegMobilenumber"
+                            android:layout_width="match_parent"
+                            android:maxLength="10"
+                            android:digits="0123456789+"
+                            android:imeOptions="actionDone"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_mobile_number"
+                            android:inputType="number"
+                            android:maxLines="1" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp">
+
+                        <com.mxi.ecommerce.widget.MyEdittextLight
+                            android:id="@+id/etRegEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_email"
+                            android:inputType="text"
+                            android:maxLines="1" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:paddingLeft="25dp"
+                        app:passwordToggleEnabled="true"
+                        android:paddingRight="25dp">
+
+                        <com.mxi.ecommerce.widget.MyEdittextLight
+                            android:id="@+id/etRegPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_passwrod"
+                            android:inputType="textPassword"
+                            android:maxLines="1" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:paddingLeft="25dp"
+                        app:passwordToggleEnabled="true"
+                        android:paddingRight="25dp">
+
+                        <com.mxi.ecommerce.widget.MyEdittextLight
+                            android:id="@+id/etRegConfirmPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_confirm_password"
+                            android:inputType="textPassword"
+                            android:maxLines="1" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:paddingLeft="19dp"
+                android:paddingRight="15dp"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <LinearLayout
+                    android:layout_weight="9"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/ch_term_condition"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:layout_weight="1">
+
+
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+
+                        <LinearLayout
+                            android:paddingTop="5sp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="0dp">
+
+                            <com.mxi.ecommerce.widget.MyTextviewLight
+                                android:textSize="12sp"
+                                android:paddingLeft="3dp"
+                                android:layout_width="wrap_content"
+                                android:text="@string/i_have_read"
+                                android:textColor="@color/grey_text"
+                                android:layout_height="wrap_content" />
+
+
+                            <com.mxi.ecommerce.widget.MyTextviewLight
+                                android:textColor="#A9CEED"
+                                android:textSize="12sp"
+                                android:layout_width="wrap_content"
+                                android:text="@string/i_have_read2"
+                                android:paddingLeft="2dp"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="0dp">
+
+                            <com.mxi.ecommerce.widget.MyTextviewLight
+                                android:textSize="12sp"
+                                android:layout_width="wrap_content"
+                                android:text="@string/i_have_read3"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/grey_text"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <Button
+                        android:id="@+id/btn_Registers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_background"
+                        android:text="@string/register_btn_text"
+                        android:textColor="@color/text_white"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:id="@+id/ln_register_gotologin"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp">
+
+                <LinearLayout
+                    android:paddingLeft="12sp"
+                    android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                    <com.mxi.ecommerce.widget.MyTextviewLight
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:text="@string/already_register"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey_text"/>
+
+
+                    <com.mxi.ecommerce.widget.MyTextviewBold
+                        android:textColor="#A7CDED"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:text="@string/signin"
+                        android:textStyle="bold"
+                        android:paddingLeft="7dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="match_parent">
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+
+
+
+
+
+
+
+
+</android.support.v4.widget.NestedScrollView >

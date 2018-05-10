@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mxi.ecommerce.activity.MyOrderActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        -
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.8"
+            android:layout_height="0dp">
+            <include
+                android:id="@+id/layout1"
+                layout="@layout/comman_toolbar" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/button_color_grey"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="7"
+            android:layout_marginTop="2dp"
+            android:layout_height="0dp"
+            android:background="#F9F8F8">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_myorder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

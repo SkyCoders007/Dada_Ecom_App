@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="180dp"
+        android:layout_height="290dp"
+        android:elevation="30dp"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="290dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ln_view_category_mainscreen"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="11"
+                android:gravity="center">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ProgressBar
+                        android:id="@+id/pgb_image_loading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+
+                    <ImageView
+                        android:id="@+id/img_thumbnail"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/footwearone" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="0dp">
+
+                <com.mxi.ecommerce.widget.MyTextviewLight
+                    android:id="@+id/tvSpecies"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:text="@string/sign_with"
+                    android:textColor="@color/text_color"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <!--
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="0dp">
+
+                            <com.mxi.ecommerce.widget.MyTextviewSemibold
+                                android:id="@+id/tv_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="left"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="5dp"
+                                android:text="OMR1600"
+                                android:textColor="@color/text_color"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>-->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:id="@+id/v_price_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_alignEnd="@+id/tv_price"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:background="@color/grey_text" />
+
+                    <com.mxi.ecommerce.widget.MyTextviewLight
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textAlignment="gravity"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_offer_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:visibility="visible">
+
+                <com.mxi.ecommerce.widget.MyTextviewLight
+                    android:id="@+id/tv_offer_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="640"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_share"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:src="@mipmap/ic_share" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_recoomented_cart"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:src="@mipmap/ic_addto_cart" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_recoomented_wishlist"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:src="@mipmap/faviourite" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

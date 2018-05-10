@@ -1,0 +1,1248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/layout"
+                layout="@layout/comman_toolbar" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/button_color_grey" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/bg_screen"
+                            android:paddingTop="15dp">
+
+                            <FrameLayout
+
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ProgressBar
+                                    android:id="@+id/pgb_image_loading"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center" />
+
+                                <ImageView
+                                    android:id="@+id/iv_product_image"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:layout_gravity="center"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/no_media" />
+
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/bg_screen"
+                            android:gravity="left"
+                            android:paddingLeft="13dp"
+                            android:paddingTop="15sp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="left"
+                                android:orientation="horizontal">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/recycleview_image"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:nestedScrollingEnabled="false" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/bg_screen"
+                            android:gravity="left"
+                            android:paddingLeft="17dp"
+                            android:paddingRight="17dp"
+                            android:paddingTop="16dp">
+
+                            <com.mxi.ecommerce.widget.MyTextviewLight
+                                android:id="@+id/tv_produxt_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@color/color_purple" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/bg_screen"
+                            android:gravity="left"
+                            android:paddingLeft="17dp"
+                            android:paddingRight="17dp"
+                            android:paddingTop="2dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left">
+
+                                <com.mxi.ecommerce.widget.MyTextviewLight
+                                    android:id="@+id/tv_produxt_instock"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="#3d792a" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent"
+                            android:background="@color/bg_screen"
+                            android:gravity="left"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="16dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:gravity="left">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="#199900"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent">
+
+                                            <com.mxi.ecommerce.widget.MyTextviewLight
+                                                android:id="@+id/tv_product_rating"
+                                                android:layout_width="25dp"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center"
+                                                android:text="0"
+                                                android:textColor="@color/text_white"
+                                                android:textSize="18sp" />
+
+
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent">
+
+                                            <ImageView
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_gravity="center"
+                                                android:padding="5dp"
+                                                android:src="@mipmap/star"
+                                                android:textColor="@color/text_white" />
+
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent">
+
+
+                                        <com.mxi.ecommerce.widget.MyTextviewLight
+                                            android:id="@+id/tv_product_review"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:paddingLeft="15dp"
+                                            android:paddingTop="3dp"
+                                            android:textSize="18dp" />
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/bg_screen"
+                            android:gravity="left"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="left"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center">
+
+                                    <View
+                                        android:id="@+id/v_price_check"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="1dp"
+                                        android:layout_alignEnd="@+id/tv_product_price"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="left"
+                                        android:background="@color/grey_text" />
+
+                                    <com.mxi.ecommerce.widget.MyTextviewLight
+                                        android:id="@+id/tv_product_price"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left|bottom"
+                                        android:text="OMR 50.00"
+                                        android:textSize="24sp" />
+
+                                </RelativeLayout>
+
+
+                                <com.mxi.ecommerce.widget.MyTextviewLight
+                                    android:id="@+id/tv_product_special_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="left"
+                                    android:layout_marginLeft="10dp"
+                                    android:gravity="bottom"
+                                    android:text="OMR 50.00"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/button_color_grey" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent"
+                            android:background="@color/bg_screen"
+                            android:gravity="left"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="15dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:orientation="vertical">
+
+                                <com.mxi.ecommerce.widget.MyTextviewLight
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/pro_specification"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+                            android:background="@color/bg_screen"
+                            android:gravity="left"
+                            android:orientation="vertical"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <com.mxi.ecommerce.widget.MyTextviewLight
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:paddingTop="1dp"
+                                    android:text="@string/product_brand"
+                                    android:textColor="#000000"
+                                    android:textSize="18dp" />
+
+                                <com.mxi.ecommerce.widget.MyTextviewLight
+                                    android:id="@+id/tv_product_brand"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingLeft="15sp"
+                                    android:paddingTop="3dp"
+                                    android:text="Test 1"
+                                    android:textAlignment="gravity"
+                                    android:textColor="@color/grey_text"
+                                    android:textSize="15dp" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp">
+
+                                <com.mxi.ecommerce.widget.MyTextviewLight
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:paddingTop="1dp"
+                                    android:text="@string/product_code_mode"
+                                    android:textColor="#000000"
+                                    android:textSize="18dp" />
+
+                                <com.mxi.ecommerce.widget.MyTextviewLight
+                                    android:id="@+id/tv_product_id"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:paddingLeft="15sp"
+                                    android:paddingTop="3dp"
+                                    android:text="Test 1"
+                                    android:textColor="@color/grey_text"
+                                    android:textSize="15dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/rv_product_specification"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/bg_screen"
+                            android:gravity="left"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="10dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:orientation="vertical">
+
+                                <com.mxi.ecommerce.widget.MyTextviewLight
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/product_description"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/bg_screen"
+                            android:gravity="left"
+                            android:orientation="vertical"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp">
+
+                                <!--
+                                                                <com.mxi.ecommerce.widget.MyTextviewLight
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="match_parent"
+                                                                    android:paddingTop="1dp"
+                                                                    android:text="@string/product_description"
+                                                                    android:textColor="#000000"
+                                                                    android:textSize="18dp" />
+                                -->
+
+                                <com.mxi.ecommerce.widget.MyTextviewLight
+                                    android:id="@+id/tv_product_description"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="15dp"
+                                    android:paddingRight="15dp"
+                                    android:paddingTop="5dp"
+                                    android:text="Test 1"
+                                    android:textColor="@color/grey_text"
+                                    android:textSize="15dp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/button_color_grey" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/text_white"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="left"
+                                android:orientation="vertical"
+                                android:paddingLeft="13dp"
+                                android:paddingTop="10dp">
+
+                                <com.mxi.ecommerce.widget.MyTextviewLight
+                                    android:id="@+id/tv_product_realted_tag"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/pro_related"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_weight="1"
+                                    android:gravity="left">
+
+                                    <android.support.v7.widget.RecyclerView
+                                        android:id="@+id/recycleview_relatedproduct"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:nestedScrollingEnabled="false" />
+
+                                </LinearLayout>
+
+                                <com.mxi.ecommerce.widget.MyTextviewLight
+                                    android:id="@+id/tv_product_intrested_tag"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="15sp"
+                                    android:text="@string/pro_interest"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_weight="1"
+                                    android:gravity="left">
+
+                                    <android.support.v7.widget.RecyclerView
+                                        android:id="@+id/recycleview_intrestedproduct"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:nestedScrollingEnabled="false" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_marginTop="20dp"
+                                android:gravity="left">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="left">
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ProgressBar
+                                            android:id="@+id/pgb_image_loading1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center" />
+
+                                        <ImageView
+                                            android:id="@+id/iv_product_banner"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:scaleType="fitXY"
+                                            android:src="@drawable/no_media" />
+
+                                    </FrameLayout>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="left"
+                                android:orientation="vertical"
+                                android:paddingLeft="1dp"
+                                android:paddingTop="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1.5">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <com.mxi.ecommerce.widget.MyTextviewLight
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:paddingLeft="10dp"
+                                            android:paddingTop="4dp"
+                                            android:text="@string/rate_review"
+                                            android:textColor="#000000"
+                                            android:textSize="20sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="205dp"
+                                    android:layout_marginTop="15sp"
+                                    android:layout_weight="1">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="2"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:orientation="vertical"
+                                            android:paddingLeft="4dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1">
+
+                                                <com.mxi.ecommerce.widget.MyTextviewLight
+                                                    android:id="@+id/tv_bottom_rating"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent"
+                                                    android:paddingLeft="22sp"
+                                                    android:paddingTop="6dp"
+                                                    android:text="4.5"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000"
+                                                    android:textSize="23sp" />
+
+                                                <ImageView
+                                                    android:layout_width="35dp"
+                                                    android:layout_height="35dp"
+                                                    android:paddingLeft="7dp"
+                                                    android:src="@mipmap/star"
+                                                    android:tint="#000000" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1">
+
+                                                <com.mxi.ecommerce.widget.MyTextviewLight
+                                                    android:id="@+id/tv_bottom_review_text"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:text="60 reviews"
+                                                    android:textAlignment="center"
+                                                    android:textColor="@color/grey_text"
+                                                    android:textSize="18sp" />
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1" />
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@color/button_color_grey"
+                                        android:paddingLeft="2dp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal"
+                                            android:paddingLeft="3dp"
+                                            android:paddingTop="7dp"
+                                            android:weightSum="10">
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1.5">
+
+                                                <com.mxi.ecommerce.widget.MyTextviewLight
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center"
+                                                    android:text="@string/five_star"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000"
+                                                    android:textSize="18sp" />
+
+                                            </LinearLayout>
+
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="7"
+                                                android:gravity="center">
+
+                                                <ProgressBar
+                                                    android:id="@+id/pb_five_rating"
+                                                    style="?android:attr/progressBarStyleHorizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_alignParentLeft="true"
+                                                    android:layout_gravity="center"
+                                                    android:indeterminate="false"
+                                                    android:max="100"
+                                                    android:minHeight="50dp"
+                                                    android:minWidth="200dp"
+                                                    android:progress="50"
+                                                    android:progressTint="@color/color_green" />
+
+
+                                            </LinearLayout>
+
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_gravity="left"
+                                                android:layout_marginTop="0dp"
+                                                android:layout_weight="1.5"
+                                                android:gravity="center">
+
+
+                                                <com.mxi.ecommerce.widget.MyTextviewLight
+                                                    android:id="@+id/tv_five_rating"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:gravity="center"
+                                                    android:text="47700"
+                                                    android:textColor="@color/grey_text"
+                                                    android:textSize="12sp" />
+
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal"
+                                            android:paddingLeft="3dp"
+                                            android:paddingTop="7dp"
+                                            android:weightSum="10">
+
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1.5">
+
+
+                                                <com.mxi.ecommerce.widget.MyTextviewLight
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center"
+                                                    android:text="@string/four_star"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000"
+                                                    android:textSize="18sp" />
+
+
+                                            </LinearLayout>
+
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="7"
+                                                android:gravity="center">
+
+
+                                                <ProgressBar
+                                                    android:id="@+id/pb_four_rating"
+                                                    style="?android:attr/progressBarStyleHorizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_alignParentLeft="true"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginBottom="0dp"
+                                                    android:layout_marginLeft="0dp"
+                                                    android:indeterminate="false"
+                                                    android:max="100"
+                                                    android:minHeight="50dp"
+                                                    android:minWidth="200dp"
+                                                    android:progress="1"
+                                                    android:progressTint="@color/color_green" />
+
+
+                                            </LinearLayout>
+
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_marginTop="0dp"
+                                                android:layout_weight="1.5"
+                                                android:gravity="center">
+
+                                                <com.mxi.ecommerce.widget.MyTextviewLight
+                                                    android:id="@+id/tv_four_rating"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center"
+                                                    android:text="47700"
+                                                    android:textAlignment="center"
+                                                    android:textColor="@color/grey_text"
+                                                    android:textSize="12sp" />
+
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal"
+                                            android:paddingLeft="3dp"
+                                            android:paddingTop="7dp"
+                                            android:weightSum="10">
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1.5">
+
+                                                <com.mxi.ecommerce.widget.MyTextviewLight
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:gravity="center"
+                                                    android:text="@string/three_star"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000"
+                                                    android:textSize="18sp" />
+
+                                            </LinearLayout>
+
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="7"
+                                                android:gravity="center">
+
+
+                                                <ProgressBar
+                                                    android:id="@+id/pb_three_rating"
+                                                    style="?android:attr/progressBarStyleHorizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_alignParentLeft="true"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginBottom="0dp"
+                                                    android:layout_marginLeft="0dp"
+                                                    android:indeterminate="false"
+                                                    android:max="100"
+                                                    android:minHeight="50dp"
+                                                    android:minWidth="200dp"
+                                                    android:progress="1"
+                                                    android:progressTint="@color/color_green" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_marginTop="0dp"
+                                                android:layout_weight="1.5">
+
+                                                <com.mxi.ecommerce.widget.MyTextviewLight
+                                                    android:id="@+id/tv_three_rating"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center"
+                                                    android:text="47700"
+                                                    android:textAlignment="center"
+                                                    android:textColor="@color/grey_text"
+                                                    android:textSize="12sp" />
+
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal"
+                                            android:paddingLeft="3dp"
+                                            android:paddingTop="7dp"
+                                            android:weightSum="10">
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1.5">
+
+                                                <com.mxi.ecommerce.widget.MyTextviewLight
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center"
+                                                    android:gravity="center"
+                                                    android:text="@string/two_star"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000"
+                                                    android:textSize="18sp" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="7"
+                                                android:gravity="center">
+
+                                                <ProgressBar
+                                                    android:id="@+id/pb_two_rating"
+                                                    style="?android:attr/progressBarStyleHorizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_alignParentLeft="true"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginBottom="0dp"
+                                                    android:layout_marginLeft="0dp"
+                                                    android:indeterminate="false"
+                                                    android:max="100"
+                                                    android:minHeight="50dp"
+                                                    android:minWidth="200dp"
+                                                    android:progress="1"
+                                                    android:progressTint="@color/color_orange" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_marginTop="0dp"
+                                                android:layout_weight="1.5"
+                                                android:gravity="center">
+
+                                                <com.mxi.ecommerce.widget.MyTextviewLight
+                                                    android:id="@+id/tv_two_rating"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center"
+                                                    android:text="47700"
+                                                    android:textAlignment="center"
+                                                    android:textColor="@color/grey_text"
+                                                    android:textSize="12sp" />
+
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal"
+                                            android:paddingLeft="3dp"
+                                            android:paddingTop="7dp"
+                                            android:weightSum="10">
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1.5"
+                                                android:gravity="center">
+
+                                                <com.mxi.ecommerce.widget.MyTextviewLight
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center"
+                                                    android:text="@string/one_star"
+                                                    android:textAlignment="center"
+                                                    android:textColor="#000"
+                                                    android:textSize="18sp" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="7"
+                                                android:gravity="center">
+
+                                                <ProgressBar
+                                                    android:id="@+id/pb_one_rating"
+                                                    style="?android:attr/progressBarStyleHorizontal"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_alignParentLeft="true"
+                                                    android:layout_marginBottom="0dp"
+                                                    android:layout_marginLeft="0dp"
+                                                    android:indeterminate="false"
+                                                    android:max="100"
+                                                    android:minHeight="50dp"
+                                                    android:minWidth="200dp"
+                                                    android:progress="1"
+                                                    android:progressTint="@color/color_red" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_marginTop="0dp"
+                                                android:layout_weight="1.5"
+                                                android:gravity="center">
+
+                                                <com.mxi.ecommerce.widget.MyTextviewLight
+                                                    android:id="@+id/tv_one_rating"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center"
+                                                    android:text="47700"
+                                                    android:textAlignment="center"
+                                                    android:textColor="@color/grey_text"
+                                                    android:textSize="12sp" />
+
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="left"
+                                android:paddingLeft="13dp"
+                                android:paddingTop="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_weight="1"
+                                    android:gravity="left">
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <!--
+
+                                                        <View
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="1dp"
+                                                            android:layout_marginTop="10dp"
+                                                            android:background="@color/button_color_grey" />
+                            -->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/rv_review_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/button_color_grey" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_all_reviews"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10sp"
+                                android:paddingTop="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4">
+
+                                    <com.mxi.ecommerce.widget.MyTextviewLight
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingTop="4dp"
+                                        android:text="All 1500 reviews"
+                                        android:textColor="#000"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:paddingRight="8sp">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|right"
+                                        android:paddingTop="0dp"
+                                        android:src="@drawable/right_arrow" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/button_color_grey" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginTop="2dp"
+                                android:gravity="left">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:orientation="vertical">
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1"></LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="3"
+                                        android:orientation="horizontal">
+
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+                                            <com.mxi.ecommerce.widget.MyButtonLight
+                                                android:id="@+id/btn_add_to_wishlist"
+                                                android:layout_width="130dp"
+                                                android:layout_height="50dp"
+                                                android:background="@drawable/btn_purple_background"
+                                                android:text="@string/add_to_wish"
+                                                android:textAllCaps="false"
+                                                android:textColor="@color/text_white"
+                                                android:textSize="13sp"
+                                                android:textStyle="bold" />
+
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+                                            <com.mxi.ecommerce.widget.MyButtonLight
+                                                android:id="@+id/btn_add_cart"
+                                                android:layout_width="130dp"
+                                                android:layout_height="50dp"
+                                                android:background="@drawable/btn_background"
+                                                android:text="@string/add_to_cart"
+                                                android:textAllCaps="false"
+                                                android:textColor="@color/text_white"
+                                                android:textSize="13sp"
+                                                android:textStyle="bold" />
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+
+            </android.support.v4.widget.NestedScrollView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

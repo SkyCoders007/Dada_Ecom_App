@@ -1,0 +1,311 @@
+<resources>
+    <string name="app_name">1811</string>
+    <string name="home_name">Home</string>
+
+    <!--Error-->
+    <string name="ws_error">Oops! something went wrong</string>
+    <string name="no_internet">Oops! No Internet Connection</string>
+
+    <string name="dialog_internet_alert">No internet available, Please connect to internet to go further</string>
+    <string name="dialog_ok">OK</string>
+    <string name="please_wait">Please wait...</string>
+
+    <!--Login Screen-->
+    <string name="hint_user_name">User Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_user_password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login_btn">LOGIN</string>
+    <string name="signup">SignUp</string>
+    <string name="skip">Skip</string>
+    <string name="or">Or sign in with social</string>
+
+    <!--Add address screen-->
+    <string name="add_address">Add address</string>
+    <string name="area">Area</string>
+    <string name="way_number">Way Number</string>
+    <string name="b_h_number">Building/house number</string>
+    <string name="post_code">Post Code</string>
+    <string name="city">City</string>
+    <string name="landmark">Landmark</string>
+    <string name="submit">Submit</string>
+    <string name="deli_address">Delivery address</string>
+    <string name="select_country">Select Country</string>
+    <string name="product_size">Select Size</string>
+    <string name="select_state">Select State</string>
+    <string name="enter_fname">Enter FirstName</string>
+    <string name="select_color">Select Color</string>
+    <string name="enter_lname">Enter LastName</string>
+    <string name="enter_area">Enter Area</string>
+    <string name="enter_way_number">Enter Way Number properly</string>
+    <string name="enter_building_number">Enter Building Number</string>
+    <string name="enter_postal_code">Enter Postal code</string>
+    <string name="enter_cityname">Enter City Name</string>
+    <string name="choose_country">Choose Country</string>
+    <string name="choose_state">Choose State</string>
+    <string name="enter_landmark">Enter Landmark</string>
+    <string name="add_success_added">Address successfully added</string>
+
+    <!--Add To Cart screen-->
+    <string name="select_d_address">Select delivery address</string>
+    <string name="address">Address</string>
+    <string name="qty">Select Quantity</string>
+    <string name="nulls"></string>
+    <string name="mxi">Mxicoders Pvt. Ltd.</string>
+    <string name="price_detail">Price Details</string>
+    <string name="total_price">Total Price:-</string>
+    <string name="amount_payable">Amount Payable</string>
+    <string name="continuee">Continue</string>
+    <string name="cart_empty">Cart is Empty</string>
+    <string name="see_all">See All</string>
+    <string name="model">Model :</string>
+    <string name="omr">OMR :</string>
+    <string name="move_to_wish">Move to wishlist</string>
+    <string name="remove">Remove</string>
+    <string name="cart">Cart</string>
+    <string name="sub_total">Sub-Total</string>
+    <string name="total">Total</string>
+    <string name="out_of_stock">One or more product out of stock</string>
+    <string name="select_qt">Select Qty</string>
+    <string name="qt1">Qty : 1</string>
+    <string name="qt2">Qty : 2</string>
+    <string name="qt3">Qty : 3</string>
+    <string name="qt4">Qty : 4</string>
+    <string name="qt5">Qty : 5</string>
+    <string name="qt6">Qty : 6</string>
+    <string name="qt7">Qty : 7</string>
+    <string name="qt8">Qty : 8</string>
+    <string name="qt9">Qty : 9</string>
+    <string name="qt10">Qty : 10</string>
+
+    <string name="in_stock">In Stock</string>
+    <string name="out_stock">Out of Stock</string>
+    <string name="pro_added_wishlist">Product added in to Wishlist</string>
+    <string name="cart_remove">Your Cart item has been Removed</string>
+    <string name="pro_moved">Product successfully moved to Wish List</string>
+    <string name="select_address">Please Select Address</string>
+
+    <!--Category result-->
+    <string name="sort">Sort</string>
+    <string name="filter">Filter</string>
+    <string name="canclee">Cancel</string>
+    <string name="apply">Apply</string>
+
+    <!--Category listing sorting-->
+    <string name="seller_s">Sellers : </string>
+    <string name="price_s">Price :</string>
+    <string name="offer_price">Offer Price :</string>
+
+    <!--Language dialog-->
+    <string name="select_language">Select Language</string>
+    <string name="ar">AR</string>
+    <string name="en">EN</string>
+    <string name="english">English</string>
+
+    <!--Deal detail screen-->
+    <string name="no_data">No Data Available</string>
+
+    <!--Order detail screen-->
+    <string name="order_id">Order id:</string>
+    <string name="date">Date:</string>
+    <string name="payment_address">Payment Address:</string>
+    <string name="your_order">Your Order</string>
+    <string name="your_order_amount">Your Order Amount</string>
+    <string name="order_total">Order Total : </string>
+    <string name="data_added">Date added :</string>
+    <string name="view">View</string>
+    <string name="order_track">Order Tracking</string>
+    <string name="return_pro">Return Product</string>
+
+    <!--Return product pending-->
+    <string name="confirmation">Confirmation</string>
+    <string name="please_confirmation">Please Confirm Your Return Product</string>
+
+    <!--Proceed Payment-->
+    <string name="order_placed">Order Successfully Placed</string>
+    <string name="del_date">Scheduled Delivery Date</string>
+    <string name="today">Today</string>
+
+    <!--Product detail screen-->
+    <string name="pro_specification">Product specification</string>
+    <string name="pro_decription">Product Description</string>
+    <string name="pro_related">Related products</string>
+    <string name="pro_interest">You might be also interested in</string>
+    <string name="rate_review">Rating &#38; Reviews</string>
+    <string name="add_to_wish">Add to wishlist</string>
+    <string name="add_to_cart">Add to cart</string>
+
+    <!--raw attribute speci-->
+    <string name="memory">Memory</string>
+
+
+    <!--Order Tracking screen-->
+    <string name="status">Status:</string>
+    <string name="pending">Pending</string>
+    <string name="commentt">Comment:-</string>
+    <string name="dispatched">Dispatched</string>
+    <string name="out_delevery">Out of Delivery</string>
+    <string name="order_date">Order Date</string>
+
+    <!--Payment screen-->
+    <string name="cash_on">Cash on delivery</string>
+    <string name="price">Price</string>
+
+    <!--Proceed Payment screen-->
+    <string name="order_success">Order Successfully Placed</string>
+    <string name="schedule_date">Scheduled Delivery Date</string>
+    <string name="continue_shopping">Continue Shopping</string>
+
+
+    <!--Sign Up screen-->
+    <string name="hint_first_name">First name</string>
+    <string name="hint_last_name">Last name</string>
+    <string name="hint_mobile_number">Mobile number</string>
+    <string name="hint_emails">Email</string>
+    <string name="hint_passwrod">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="text_seller_customer">Are you seller or customer?</string>
+    <string name="seller">Seller</string>
+    <string name="customer">Customer</string>
+    <string name="terms">I have read and agreed to the  Terms and conditions of 1811.</string>
+    <string name="register_btn_text">REGISTER</string>
+    <string name="already_register">Already have an account?</string>
+    <string name="sign_with">Or Sign up with</string>
+    <string name="select_term">Please select Term &#38; Condition</string>
+    <string name="phone_alert">Please Enter valid phone number</string>
+    <string name="i_have_read">I have read and agreed to the</string>
+    <string name="i_have_read2">Terms and conditions</string>
+    <string name="i_have_read3">of 1811.</string>
+    <string name="signin">SIGN IN</string>
+
+    <!--Return product detail-->
+    <string name="product_name">Product Name :-</string>
+    <string name="order_date_return">Order date :-</string>
+    <string name="product_id">Product Id:-</string>
+    <string name="order_id2">Order id:-</string>
+    <string name="customer_detail">Customer Detail</string>
+    <string name="name">Name :-</string>
+    <string name="email">E-mail:-</string>
+    <string name="mobile_no">Mobile Number:-</string>
+    <string name="next">Next</string>
+
+    <!--Return result screen-->
+    <string name="pro_opened">Product is opened </string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="addit_comment">Additional Comments</string>
+    <string name="return_product">Return Product</string>
+    <string name="returnn">Return</string>
+
+    <!--Search screen-->
+    <string name="search_product">Search Product</string>
+
+    <!--Send feedback screen-->
+    <string name="name_f">Name</string>
+    <string name="email_f">Email</string>
+    <string name="message_f">Message</string>
+    <string name="send_feedback">Send feedback</string>
+    <string name="send">Send</string>
+
+    <!--Logout dialog-->
+    <string name="login">Login</string>
+    <string name="login_first">Please login first to access this function?</string>
+
+    <!--Menu drawer-->
+    <string name="shop_category">Shop by Category</string>
+    <!--<string name="today_deal">Today&#39;s Deals</string>-->
+    <string name="my_account">My Accounts</string>
+    <string name="deal">Deals</string>
+    <string name="wish_list">Wish List</string>
+    <string name="language">Language</string>
+    <string name="blog">Blogs</string>
+    <string name="return_order">Return Order</string>
+    <string name="logout">Logout</string>
+
+    <!--Forgot password-->
+    <string name="forgot_apply">OK</string>
+    <string name="forgot_cancle">CANCLE</string>
+    <string name="email_id_dialog">Enter Email ID</string>
+    <string name="forgot_pass_dialog">FORGOT PASSWORD</string>
+    <string name="text_description">Up to 60% discount on below items.</string>
+    <string name="menu_edit">Edit Profile</string>
+
+
+    <!--FILTER SCREEE-->
+
+
+    <string name="filter_screen_price">Price</string>
+    <string name="filter_screen_brand">Brand</string>
+    <string name="filter_screen_category">Category</string>
+    <string name="filter_screen_discount">Discount</string>
+    <string name="filter_screen_material">Material</string>
+    <string name="filter_screen_size">Size</string>
+
+
+    <!--MyAccount SCREEE-->
+
+    <string name="myacc_change_password">Change password</string>
+    <string name="myacc_edit_profile">Edit profile</string>
+    <string name="account_info">Account info</string>
+
+
+    <!--Change Password-->
+
+    <string name="chaned_enter_old_ps">Old Password</string>
+    <string name="chaned_enter_new_ps">Password</string>
+    <string name="chaned_enter_new_conform__ps">Confirm Password</string>
+    <string name="change_pass">Change password</string>
+    <string name="update">Update</string>
+
+    <!--Edit User Profile-->
+
+    <string name="edit_profilt_fname">First name</string>
+    <string name="edit_profilt_lname">Last name</string>
+    <string name="edit_profilt_mobile_number">Mobile Number</string>
+    <string name="edit_profilt_email">E-mail</string>
+
+
+    <string name="product_description">\u25CF Description:</string>
+    <string name="product_brand">\u25CF Brand:</string>
+    <string name="product_code_mode">\u25CF Product code:</string>
+    <string name="product_code_memory">\u25CF Memory;</string>
+    <string name="Loerm_ipsum">\u25CF Lorem ipsum dolar sit amet </string>
+
+
+    <!--Rating star text-->
+
+    <string name="five_star">5&#9733;</string>
+    <string name="four_star">4&#9733;</string>
+    <string name="three_star">3&#9733;</string>
+    <string name="two_star">2&#9733;</string>
+    <string name="one_star">1&#9733;</string>
+
+    <!--Bottom menu name-->
+    <string name="home_bottom">Home</string>
+    <string name="category_bottom">Category</string>
+    <string name="Deals_bottom">Deals</string>
+    <string name="wishlist_bottom">Wish list</string>
+    <string name="myacc_bottom">My Account</string>
+
+
+    <!--My Account Info strings-->
+
+    <string name="myacc_info_myoder">My order</string>
+    <string name="myacc_info_myaddress">My addresses</string>
+    <string name="myacc_info_wishlist">Wishlist</string>
+    <string name="myacc_info_ordertracking">Order Tracking</string>
+    <string name="myacc_info_sendfeedback">Send feedback</string>
+
+
+    <!--FACEBOOK KEY-->
+    <string name="facebook_app_id">713413872196819</string>
+    <string name="twitter_consumer_key">JXJRvQViuTZ1mRb64aJ2m2fwi</string>
+    <string name="twitter_consumer_secret">ZvQOMvfHgag9NgVOiC27XZ5keopDt7RG0GzLzZAXc7n1TPsM6U</string>
+    <string name="dialog_title">Complete Registration</string>
+    <string name="dialog_info">Please enter remaining information to complete the registration</string>
+    <string name="internet_alert">Sorry ! Internet connection is not available</string>
+
+
+    <string name="proceed_text">We have started working towardsdelivery of your order.</string>
+
+</resources>

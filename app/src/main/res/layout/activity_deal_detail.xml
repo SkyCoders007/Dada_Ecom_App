@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    android:id="@+id/layout1"
+                    layout="@layout/comman_toolbar" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/button_color_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center|left"
+                        android:orientation="horizontal"
+                        android:paddingLeft="13sp">
+
+                        <com.mxi.ecommerce.widget.MyButtonLight
+                            android:id="@+id/sorting_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:background="@drawable/btn_purple_background"
+                            android:text="@string/sort"
+                            android:textAllCaps="false"
+                            android:textColor="@color/text_white" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:gravity="center|right">
+
+
+                        <ImageView
+
+                            android:id="@+id/img_listing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:paddingRight="8dp"
+                            android:src="@mipmap/category_sorting_filter" />
+
+                        <ImageView
+                            android:id="@+id/img_gridelisting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:paddingRight="12dp"
+                            android:src="@mipmap/category_sorting" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/button_color_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/ln_gride"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible">
+
+                        <GridView
+                            android:id="@+id/grid"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:columnWidth="0dp"
+                            android:fastScrollEnabled="true"
+                            android:gravity="center"
+                            android:horizontalSpacing="6dp"
+                            android:numColumns="auto_fit"
+                            android:smoothScrollbar="true"
+                            android:stretchMode="columnWidth"
+                            android:verticalSpacing="10dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycleview_listing"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                        </android.support.v7.widget.RecyclerView>
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/iv_null_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/no_media"
+                        android:visibility="invisible" />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.mxi.ecommerce.widget.MyTextviewBold
+            android:id="@+id/tv_no_data_available"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/no_data"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="gone" />
+
+
+        <View
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="57dp"
+            android:background="@color/button_color_grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <include
+                    android:id="@+id/layout1"
+                    layout="@layout/bottom_toolbar" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

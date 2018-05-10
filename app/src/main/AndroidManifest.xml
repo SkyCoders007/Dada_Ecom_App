@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mxi.ecommerce">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".comman.AppController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LanguageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShopCategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CategoryDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ProductDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AccountInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderTrackingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WishlistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AddAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DealActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TopDealDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AddToCartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.PopLanguageScreen"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.OrderDetailActivity" />
+        <activity android:name=".activity.SendFeedbackActivity" />
+        <activity android:name=".activity.ProceedPaymentActivity" />
+        <activity android:name=".activity.TodayTopDealActivity" />
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.ReturnProductActivity" />
+        <activity android:name=".activity.ReturnProductDetailActivity" />
+        <activity android:name=".activity.ReturnReasonActivity" />
+        <activity android:name=".activity.CartConfirmationActivity"></activity>
+    </application>
+
+</manifest>

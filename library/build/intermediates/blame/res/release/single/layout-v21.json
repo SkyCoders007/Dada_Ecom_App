@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/sonali/Desktop/akshay_12_04_18/Ecommerce_20_02_2018/library/build/intermediates/res/merged/release/layout-v21/notification_template_icon_group.xml",
+        "source": "/home/sonali/Desktop/akshay_12_04_18/Ecommerce_20_02_2018/library/build/intermediates/exploded-aar/com.android.support/support-compat/26.0.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/sonali/Desktop/akshay_12_04_18/Ecommerce_20_02_2018/library/build/intermediates/res/merged/release/layout-v21/notification_template_custom_big.xml",
+        "source": "/home/sonali/Desktop/akshay_12_04_18/Ecommerce_20_02_2018/library/build/intermediates/exploded-aar/com.android.support/support-compat/26.0.0/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/home/sonali/Desktop/akshay_12_04_18/Ecommerce_20_02_2018/library/build/intermediates/res/merged/release/layout-v21/notification_action_tombstone.xml",
+        "source": "/home/sonali/Desktop/akshay_12_04_18/Ecommerce_20_02_2018/library/build/intermediates/exploded-aar/com.android.support/support-compat/26.0.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/sonali/Desktop/akshay_12_04_18/Ecommerce_20_02_2018/library/build/intermediates/res/merged/release/layout-v21/notification_action.xml",
+        "source": "/home/sonali/Desktop/akshay_12_04_18/Ecommerce_20_02_2018/library/build/intermediates/exploded-aar/com.android.support/support-compat/26.0.0/res/layout-v21/notification_action.xml"
+    }
+]

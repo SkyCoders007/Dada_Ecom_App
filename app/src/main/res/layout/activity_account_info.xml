@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <include android:id="@+id/layout"
+            layout="@layout/comman_toolbar"/>
+
+    </LinearLayout>
+    <View
+        android:background="@color/button_color_grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/ln_my_order"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:layout_height="match_parent">
+
+                <com.mxi.ecommerce.widget.MyTextviewLight
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"
+                    android:text="@string/myacc_info_myoder"
+                    android:layout_width="match_parent"
+                    android:textColor="#000"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="4"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:gravity="center"
+                    android:src="@drawable/right_arrow"
+                    android:layout_width="match_parent"
+                    android:padding="18dp"
+                    android:layout_height="match_parent" />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/button_color_grey"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/ln_acc_info_address"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:layout_height="match_parent">
+
+                <com.mxi.ecommerce.widget.MyTextviewLight
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"
+                    android:text="@string/myacc_info_myaddress"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="4"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:gravity="center"
+                    android:src="@drawable/right_arrow"
+                    android:layout_width="match_parent"
+                    android:padding="18dp"
+                    android:layout_height="match_parent" />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/button_color_grey"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/ln_wishlist"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:layout_height="match_parent">
+
+                <com.mxi.ecommerce.widget.MyTextviewLight
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"
+                    android:text="@string/myacc_info_wishlist"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="4"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:gravity="center"
+                    android:src="@drawable/right_arrow"
+                    android:layout_width="match_parent"
+                    android:padding="18dp"
+                    android:layout_height="match_parent" />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <!--<View-->
+            <!--android:background="@color/button_color_grey"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"/>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:id="@+id/ln_order_tracking"-->
+            <!--android:layout_height="0dp">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_weight="1"-->
+                <!--android:paddingLeft="15dp"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<com.mxi.ecommerce.widget.MyTextviewLight-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="@string/myacc_info_ordertracking"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent" />-->
+
+
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_weight="4"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<ImageView-->
+                    <!--android:gravity="center"-->
+                    <!--android:src="@drawable/right_arrow"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:padding="18dp"-->
+                    <!--android:layout_height="match_parent" />-->
+
+
+
+            <!--</LinearLayout>-->
+
+
+
+        <!--</LinearLayout>-->
+
+        <View
+            android:background="@color/button_color_grey"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/ln_send_feedback"
+
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:layout_height="match_parent">
+
+                <com.mxi.ecommerce.widget.MyTextviewLight
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"
+                    android:text="@string/myacc_info_sendfeedback"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="4"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:gravity="center"
+                    android:src="@drawable/right_arrow"
+                    android:layout_width="match_parent"
+                    android:padding="18dp"
+                    android:layout_height="match_parent" />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/button_color_grey"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"></LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

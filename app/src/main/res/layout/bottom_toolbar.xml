@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:id="@+id/ln_home_bottom"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="3dp"
+                android:src="@mipmap/home_bottom" />
+
+            <com.mxi.ecommerce.widget.MyTextviewLight
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/home_bottom"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:paddingTop="2dp"
+                android:textColor="@color/grey_text"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/ln_category_bottom"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/category_bottom"
+                android:padding="3dp"/>
+
+            <com.mxi.ecommerce.widget.MyTextviewLight
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/category_bottom"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:paddingTop="2dp"
+                android:textColor="@color/grey_text"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:id="@+id/ln_deal_bottom"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/deal_bottom"
+                android:padding="3dp"/>
+
+            <com.mxi.ecommerce.widget.MyTextviewLight
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/Deals_bottom"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:paddingTop="2dp"
+                android:textColor="@color/grey_text"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/ln_wishlist_bottom"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/wishlist_bottom"
+                android:padding="3dp"/>
+
+            <com.mxi.ecommerce.widget.MyTextviewLight
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/wishlist_bottom"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:paddingTop="2dp"
+                android:textColor="@color/grey_text"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:gravity="center"
+            android:id="@+id/ln_mycc_bottom"
+
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/myacc_bottom"
+                android:padding="3dp"/>
+
+            <com.mxi.ecommerce.widget.MyTextviewLight
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/myacc_bottom"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:paddingTop="2dp"
+                android:textColor="@color/grey_text"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

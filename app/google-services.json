@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "557658398795",
+    "firebase_url": "https://project-6117957697532796387.firebaseio.com",
+    "project_id": "project-6117957697532796387",
+    "storage_bucket": "project-6117957697532796387.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557658398795:android:4fda1bacfa2f4af9",
+        "android_client_info": {
+          "package_name": "com.mxi.ecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "557658398795-60qe5rbjmipni8fcckmeo4bsu5298kdd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mxi.ecommerce",
+            "certificate_hash": "e94e3977345aad5c0de0429990b30618d04a9c7c"
+          }
+        },
+        {
+          "client_id": "557658398795-some0ge80sr0o42u3m8n0jg4ffeltbt1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz40W4oY_Uq-NBtLHd-aQNSWUGkidx3GU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+
+            "client_id": "557658398795-some0ge80sr0o42u3m8n0jg4ffeltbt1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mxi.ecommerce.activity.SearchActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_margin="5dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <com.mobisys.android.autocompleteview.AutoCompleteView
+                android:id="@+id/auto_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="8.5"
+                android:background="#0000"
+                android:hint="@string/search_product"
+                android:paddingLeft="10dp"
+                android:paddingRight="32dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:autocompleteUrl="http://mbdbtechnology.com/projects/1811/index.php?route=api/product/search&amp;language=en-gb&amp;search="
+                app:modelClass="com.mxi.ecommerce.model.Product"
+                app:rowLayout="@layout/row_product" />
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1.5"
+                android:padding="15dp"
+                android:src="@mipmap/home_search" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="0dp"
+        android:columnWidth="0dp"
+        android:fastScrollEnabled="true"
+        android:gravity="center"
+        android:horizontalSpacing="6dp"
+        android:numColumns="auto_fit"
+        android:smoothScrollbar="true"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+
+</LinearLayout>
